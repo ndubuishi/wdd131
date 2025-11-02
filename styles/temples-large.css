@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  header { flex-wrap: nowrap; }
+  #menu { display: none; }
+  nav { display: flex; width: auto; }
+  nav a { padding: .5rem 1rem; }
+
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}

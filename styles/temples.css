@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after { box-sizing: border-box; margin:0; padding:0; }
+html { font-family: system-ui, sans-serif; line-height: 1.5; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+
+header, footer { background: #2c3e50; color: #ecf0f1; padding: 1rem; }
+header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+h1 { font-size: 1.5rem; }
+#menu { background: none; border: none; font-size: 2rem; cursor: pointer; color: #ecf0f1; }
+
+nav { display: none; width: 100%; }
+nav a { display: block; padding: .75rem; color: #ecf0f1; text-decoration: none; }
+nav a:hover { background: rgba(255,255,255,.1); }
+
+nav.open { display: block; }
+
+main { flex: 1; padding: 1rem; }
+h2 { margin-bottom: .5rem; }
+
+.temple-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.temple-grid figure { margin: 0; }
+.temple-grid img {
+  width: 100%; height: auto; display: block;
+  border-radius: .5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.2);
+}
+.temple-grid figcaption {
+  text-align: center; margin-top: .5rem; font-weight: 600;
+}
+
+footer { font-size: .9rem; text-align: center; }
