@@ -1,0 +1,158 @@
+:root {
+  --primary-green: #008751;
+  --light-green: #f0f8f0;
+  --white: #ffffff;
+  --dark-text: #1a1a1a;
+  --gray-text: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-green);
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+.hero {
+  background-color: var(--primary-green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: cover;
+  border-bottom: 8px solid var(--white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.data, .weather {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 123, 81, 0.1);
+  border: 2px solid var(--primary-green);
+}
+
+.data h2, .weather h2 {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  position: relative;
+}
+
+.data p {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.weather p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.weather-icon-mobile {
+  display: block;
+  width: 60px;
+  margin: 0 auto 1rem;
+}
+
+.weather-icon-mobile img {
+  width: 100%;
+  height: auto;
+}
+
+.weather-icon-large::after {
+  content: "⛅";
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+footer {
+  background-color: var(--primary-green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .data, .weather {
+    padding: 1rem;
+  }
+
+  .weather-icon-large::after {
+    display: none;
+  }
+
+  .weather-icon-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 601px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .data, .weather {
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  .data {
+    order: 1;
+  }
+
+  .weather {
+    order: 2;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  .weather-icon-large::after {
+    display: inline;
+  }
+}

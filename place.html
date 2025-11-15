@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nigeria | Country Page</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Nigeria</h1>
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/heromobile.webps" type="image/webp">
+      <source media="(min-width: 601px)" srcset="images/herowider.webp" type="image/webp">
+      <img src="images/herowider.webp" alt="Nigerian landscape with green fields and people" loading="lazy">
+    </picture>
+  </header>
+
+  <main>
+    <section class="data">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> 923,768 sq km</p>
+      <p><strong>Population:</strong> 223,804,632</p>
+      <p><strong>Capital:</strong> Abuja</p>
+      <p><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</p>
+      <p><strong>Currency:</strong> Nigerian Naira (NGN)</p>
+      <p><strong>Time Zone:</strong> UTC+1</p>
+      <p><strong>Calling Code:</strong> +234</p>
+      <p><strong>Internet TLD:</strong> .ng</p>
+    </section>
+
+    <section class="weather">
+      <h2>Weather <span class="weather-icon-large"></span></h2>
+      <picture class="weather-icon-mobile">
+        <img src="images/weather.svg" alt="Partly cloudy weather icon">
+      </picture>
+      <p><strong>Temperature:</strong> <span id="temp">28</span>°C</p>
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+      <p><strong>Wind:</strong>  in <span id="wind">12</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentYear"></span> 🌿 Godswill Ndubuishi 🌿 Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script defer src="js/script.js"></script>
+</body>
+</html>
