@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for Mindful Moments – a personal wellness and mindfulness website">
+    <meta name="author" content="Your Name">
+    <title>Mindful Moments – Site Plan</title>
+
+    <!-- Google Fonts – Clean & Calming Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #2d6a4f;   /* Deep Forest Green – trust, calm */
+            --accent: #40916c;    /* Teal Green – growth, energy */
+            --light: #f1f8f5;     /* Very light green-gray – background */
+            --dark: #1b4332;      /* Dark green – headings */
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+            margin: 0;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            color: var(--dark);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .logo {
+            font-size: 4.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--accent);
+        }
+
+        ul { padding-left: 1.5rem; }
+        strong { color: var(--primary); }
+
+        .colors {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .color-box {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            h1 { font-size: 2.2rem; }
+            .logo { font-size: 3.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mindful Moments</div>
+        <h1>Website Site Plan</h1>
+    </header>
+
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>Mindful Moments</strong> (mindfulmoments.life – available)</p>
+        <p>This name was chosen because it instantly communicates peace, presence, and personal growth. The word “moments” emphasizes that mindfulness doesn’t require hours — just small, intentional moments throughout the day. The domain feels modern, memorable, and calming.</p>
+    </section>
+
+    <section>
+        <h2>Site Purpose</h2>
+        <p>Mindful Moments is a personal wellness website that helps visitors reduce stress and build daily mindfulness habits through:</p>
+        <ul>
+            <li>Guided breathing, reflection, and gratitude exercises (interactive tools)</li>
+            <li>Short articles on mindfulness science and practical tips</li>
+            <li>A daily mindfulness prompt</li>
+            <li>Progress tracking and gentle email reminders (future feature)</li>
+            <li>Beautiful, calming design that encourages return visits</li>
+        </ul>
+        <p>The site targets busy adults (25–50) who want to feel calmer and more centered but believe they “don’t have time” for traditional meditation.</p>
+    </section>
+
+    <section>
+        <h2>Scenarios (Target Audience Questions)</h2>
+        <ul>
+            <li>How can I calm my racing mind in under 5 minutes when I’m stressed at work?</li>
+            <li>What are simple daily habits that actually improve mental clarity?</li>
+            <li>Is there a quick way to feel more grateful when I’m having a bad day?</li>
+            <li>How do I start a mindfulness practice without it feeling overwhelming?</li>
+            <li>Can you show me a 60-second breathing exercise I can do anywhere?</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Color Schema</h2>
+        <div class="colors">
+            <div class="color-box" style="background:#2d6a4f;">#2d6a4f<br>Primary<br>(Headings, buttons)</div>
+            <div class="color-box" style="background:#40916c;">#40916c<br>Accent<br>(Links, highlights)</div>
+            <div class="color-box" style="background:#f1f8f5;">#f1f8f5<br>Light Background</div>
+            <div class="color-box" style="background:#1b4332; color:#fff;">#1b4332<br>Dark Text</div>
+        </div>
+        <p>Nature-inspired greens promote calmness, focus, and growth — perfect for mindfulness.</p>
+    </section>
+
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Headings:</strong> Cormorant Garamond – elegant, serene serif (h1–h3)</li>
+            <li><strong>Body Text:</strong> Inter – clean, highly readable sans-serif</li>
+            <li><strong>Buttons/Accents:</strong> Inter Medium (500)</li>
+        </ul>
+        <p>Limited to two fonts for harmony and fast loading.</p>
+    </section>
+
+    <section>
+        <h2>Wireframe Sketches</h2>
+        <p><strong>Mobile View (375px)</strong></p>
+        <pre style="background:#f4f4f4; padding:1rem; border-radius:8px;">
+┌────────────────────┐
+│  Mindful Moments   │ ← Logo
+├────────────────────┤
+│   Daily Practice   │ ← Hero + Start Button
+│  [Start Now]       │
+├────────────────────┤
+│ • Breathing        │
+│ • Reflection       │ ← Quick links
+│ • Gratitude        │
+├────────────────────┤
+│   Today’s Prompt   │
+│   “Notice one thing │
+│    you’re grateful │
+│    for right now”  │
+└────────────────────┘
+        </pre>
+
+        <p><strong>Desktop View (1200px+)</strong></p>
+        <pre style="background:#f4f4f4; padding:1rem; border-radius:8px;">
+┌─────────────────────────────────────────────────────────────┐
+│ Mindful Moments                                [Menu Icon]  │
+├──────────────────────┬──────────────────────────────────────┤
+│                      │                                      │
+│  Welcome back,      │   [Large calming hero image]         │
+│  ready for a        │                                      │
+│  mindful moment?    │   Start a 3-minute practice →        │
+│                      │                                      │
+├──────────────────────┴──────────────────────────────────────┤
+│  Today’s Practice     │   Quick Activities                 │
+│  Breathing Exercise   │  • Breathing   • Reflection        │
+│                       │  • Gratitude   • Daily Journal      │
+├─────────────────────────────────────────────────────────────┤
+│  “The present moment is the only time over which we have     │
+│   dominion.” – Thích Nhất Hạnh                               │
+└─────────────────────────────────────────────────────────────┘
+        </pre>
+    </section>
+
+    <footer>
+        <p>© 2025 Mindful Moments – Website Planning Document | CSE 340 – W05 Project</p>
+    </footer>
+
+</body>
+</html>
