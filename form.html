@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form | W05</title>
+  <meta name="description" content="W05 Assignment - Product Review Form with dynamic options and star rating">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Back to the Future Product Reviews</h1>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Submit Your Review</h2>
+
+      <form action="review.html" method="get" id="reviewForm">
+        
+        <label for="product">Product Name <span class="required">*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <fieldset class="rating">
+          <legend>Overall Rating <span class="required">*</span></legend>
+          <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" required><label for="star5">5 stars</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">4 stars</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">3 stars</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">2 stars</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">1 star</label>
+          </div>
+        </fieldset>
+
+        <label for="installDate">Date of Installation <span class="required">*</span></label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <fieldset>
+          <legend>Useful Features (check all that apply)</legend>
+          <label><input type="checkbox" name="features" value="easy-install"> Easy to Install</label>
+          <label><input type="checkbox" name="features" value="durable"> Very Durable</label>
+          <label><input type="checkbox" name="features" value="reliable"> Extremely Reliable</label>
+          <label><input type="checkbox" name="features" value="aesthetic"> Looks Cool</label>
+          <label><input type="checkbox" name="features" value="time-travel"> Actually Time Travels</label>
+        </fieldset>
+
+        <label for="reviewText">Written Review (optional)</label>
+        <textarea id="reviewText" name="reviewText" rows="5" placeholder="Share your experience..."></textarea>
+
+        <label for="userName">Your Name (optional)</label>
+        <input type="text" id="userName" name="userName" placeholder="e.g., Marty McFly">
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentYear"></span> ⋮ Godswill Ndubuishi ⋮ WDD 131</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
